@@ -36,6 +36,12 @@ export default {
             },
         },
         {
+            title: 'Images',
+            name: 'images',
+            type: 'array',
+            of: [{type: 'propertyImage'}]
+        },
+        {
             title: 'Price Per Night',
             name: 'pricePerNight',
             type: 'number'
@@ -69,5 +75,16 @@ export default {
             name: 'description',
             type: 'string'
         },
-    ]
+        {
+            title: 'Host',
+            name: 'host',
+            type: 'host'
+        },
+        {
+            title: 'Reviews',
+            name: 'reviews',
+            type: 'array',
+            of: [{type: 'review'}],
+        },
+    ],
 }
